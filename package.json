@@ -1,0 +1,35 @@
+{
+  "name": "flowershop",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.7.6",
+    "morgan": "~1.9.1",
+    "serve-favicon": "~2.3.0",
+    "lodash": "latest",
+    "sha1": "^1.1.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.0.2",
+    "chai-things": "^0.2.0",
+    "json-server": "^0.15.1",
+    "mocha": "^6.2.2",
+    "mongodb-memory-server": "^5.2.7",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}
