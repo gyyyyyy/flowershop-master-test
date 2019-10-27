@@ -1324,7 +1324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.test\functional\api\admin-order.js">
+  <component name="RunManager" selected="Mocha.test\functional\api\admin-product.js">
     <configuration name="Order" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1357,23 +1357,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="User.POST /login.POST /user/register" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api/user-test.js</test-file>
-      <test-names>
-        <name value="User" />
-        <name value="POST /login" />
-        <name value="POST /user/register" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="test\functional\api\admin-order.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1384,6 +1367,18 @@
       <extra-mocha-options />
       <test-kind>TEST_FILE</test-kind>
       <test-file>$PROJECT_DIR$/test/functional/api/admin-order.js</test-file>
+      <method v="2" />
+    </configuration>
+    <configuration name="test\functional\api\admin-product.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/functional/api/admin-product.js</test-file>
       <method v="2" />
     </configuration>
     <configuration name="test\functional\api\user-test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -1400,11 +1395,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.test\functional\api\admin-product.js" />
         <item itemvalue="Mocha.test\functional\api\admin-order.js" />
         <item itemvalue="Mocha.Order.PUT /admin/order/:id.when the id is invalid" />
         <item itemvalue="Mocha.Order" />
         <item itemvalue="Mocha.test\functional\api\user-test.js" />
-        <item itemvalue="Mocha.User.POST /login.POST /user/register" />
       </list>
     </recent_temporary>
   </component>
