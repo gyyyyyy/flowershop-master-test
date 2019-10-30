@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="" />
+    <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/general.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/functional/api/admin-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/admin-order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/functional/api/admin-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/admin-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/functional/api/general-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/general-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/functional/api/user-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/user-test.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flowershop-master-agile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -37,11 +55,12 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gyy\WebstormProjects\flowershop\test\functional\api" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gyy\WebstormProjects\flowershop-master-agile1" />
       <recent name="C:\Users\gyy\WebstormProjects\flowershop\test\routes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gyy\WebstormProjects\flowershop\test\functional\api" />
       <recent name="C:\Users\gyy\WebstormProjects\flowershop\test\routes" />
     </key>
   </component>
@@ -1324,79 +1343,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.test\functional\api\admin-order.js">
-    <configuration name="Order.PUT /admin/order/:id.when the id is invalid" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api/admin-order.js</test-file>
-      <test-names>
-        <name value="Order" />
-        <name value="PUT /admin/order/:id" />
-        <name value="when the id is invalid" />
-      </test-names>
+  <component name="RunManager" selected="npm.test:report">
+    <configuration name="build:release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:release" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test\functional\api\admin-order.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api/admin-order.js</test-file>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test\functional\api\admin-product.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api/admin-product.js</test-file>
+    <configuration name="lint:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test\functional\api\general-test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api/general-test.js</test-file>
+    <configuration name="start:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test\functional\api\user-test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api/user-test.js</test-file>
+    <configuration name="test:report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:report" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.test\functional\api\admin-order.js" />
-        <item itemvalue="Mocha.test\functional\api\admin-product.js" />
-        <item itemvalue="Mocha.test\functional\api\general-test.js" />
-        <item itemvalue="Mocha.test\functional\api\user-test.js" />
-        <item itemvalue="Mocha.Order.PUT /admin/order/:id.when the id is invalid" />
+        <item itemvalue="npm.test:report" />
+        <item itemvalue="npm.lint:watch" />
+        <item itemvalue="npm.lint:fix" />
+        <item itemvalue="npm.start:watch" />
+        <item itemvalue="npm.build:release" />
       </list>
     </recent_temporary>
   </component>
@@ -1421,7 +1425,7 @@
       <workItem from="1571861584988" duration="4737000" />
       <workItem from="1572826246685" duration="199000" />
       <workItem from="1572826464398" duration="40200000" />
-      <workItem from="1572152188117" duration="3738000" />
+      <workItem from="1572152188117" duration="9170000" />
     </task>
     <servers />
   </component>
@@ -1446,7 +1450,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

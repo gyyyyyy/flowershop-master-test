@@ -3,9 +3,28 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build:release": "npm-run-all test clean",
+    "clean": "rimraf ./dist && mkdir dist",
+    "lint": "esw  ./test ./routes ./models/ app.js bin/www ",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:watch": "npm run lint -- --watch",
+    "postbuild": "npm start",
+    "postbuild:dev": "npm run start:prod",
+    "prebuild": "npm-run-all test clean",
+    "prebuild:dev": "npm-run-all test clean",
+    "start": "cross-env node ./bin/www",
+    "start:prod": "cross-env node ./bin/www",
+    "start:watch": "cross-env nodemon --exec babel-node ./bin/www",
+    "test": "cross-env NODE_ENV=test mocha --timeout 6000 test/functional/api/*.js --exit",
+    "test:admin-order": "cross-env NODE_ENV=test mocha --timeout 6000 test/functional/api/admin-order.js --exit",
+    "test:admin-product": "cross-env NODE_ENV=test mocha --timeout 6000 test/functional/api/admin-product.js --exit",
+    "test:general-test": "cross-env NODE_ENV=test mocha --timeout 6000 test/functional/api/general-test.js --exit",
+    "test:user-test": "cross-env NODE_ENV=test mocha --timeout 6000 test/functional/api/user-test.js --exit",
+    "test:report": "npx nyc mocha --timeout 6000 --exit"
   },
   "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "cross-env": "^6.0.3",
     "body-parser": "~1.13.2",
     "chai-http": "^4.3.0",
     "cookie-parser": "~1.4.4",
@@ -22,14 +41,26 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
     "chai": "^4.0.2",
-    "chai-things": "^0.2.0",
-    "json-server": "^0.15.1",
+    "eslint": "^6.5.1",
+    "eslint-watch": "^6.0.1",
     "mocha": "^6.2.2",
     "mongodb-memory-server": "^5.2.7",
+    "nock": "^11.7.0",
+    "nodemon": "^1.19.4",
+    "npm-run-all": "^4.1.5",
     "nyc": "^14.1.1",
-    "supertest": "^4.0.2"
+    "rimraf": "^3.0.0",
+    "supertest": "^4.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai-things": "^0.2.0",
+    "json-server": "^0.15.1"
   }
 }

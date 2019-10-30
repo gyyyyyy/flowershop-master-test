@@ -1,0 +1,6 @@
+file:
+  - ./test/functional/api/admin-order.js
+  - ./test/functional/api/admin-product.js
+  - ./test/functional/api/general-test.js
+  - ./test/functional/api/user-test.js
+require: '@babel/register'
