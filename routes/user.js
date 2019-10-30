@@ -63,7 +63,7 @@ router.post('/login', function (req, res) {
       //     path:'/',
       //     maxAge:1000*60*60
       // });
-      let token = jwt.sign({username: user.username}, superSecret, {
+      let token = jwt.sign({userName: user.userName}, superSecret, {
         // 1 hour
         expiresIn: 3600
       })
@@ -93,10 +93,11 @@ router.put('/change', function (req, res) {
     jwt.verify(token, config.superSecret, (err, decoded) => {
       if (err) {
         res.send({message: 'error',errmsg:err})
-      } else {
+      }
+      else {
         req.decoded = decoded
 
-        User.find({username: req.body.username}, (err, user) => {
+        User.find({userName: req.body.userName}, (err, user) => {
           if (err) {
             res.send({message: 'error',errmsg:err})
           } else {

@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/0f39bbdb-2319-4579-a468-4c49bd113317.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/0f39bbdb-2319-4579-a468-4c49bd113317.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/app.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/app.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/config.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/config.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/order.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/order.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/product.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/product.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/user.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/models/user.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/admin.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/admin.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/general.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/general.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/index.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/index.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/user.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/user.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/functional/api/admin-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/admin-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/api/admin-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/admin-product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/api/general-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/general-test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/functional/api/user-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/user-test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response345.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1SeqPARr2qEbwSH3REUeaqqoOmx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,6 +74,79 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/user/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;userName&quot;:&quot;gyy123&quot;,&quot;userPwd&quot;:&quot;123&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/user/register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;userName&quot;:&quot;gyy123&quot;,&quot;userPwd&quot;:&quot;123&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="/user/register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;userName&quot;:&quot;gyy123&quot;,&quot;userPwd&quot;:&quot;123&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:3000" />
@@ -1253,81 +1333,6 @@
           <option name="textToSend" value="{userName: 'gyy1234567',orderList:[{productId:&quot;13&quot;,productName:&quot;daisy&quot;,salePrice:18,productNum:3,productImage:&quot;image/daisy&quot;,checked:&quot;1&quot;}]}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/admin/order/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{userName: 'gyy1234567',orderList:[{productId:&quot;13&quot;,productName:&quot;daisy&quot;,salePrice:18,productNum:3,productImage:&quot;image/daisy&quot;,checked:&quot;1&quot;}]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/admin/order/222222" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{userName: 'gyy1234567',orderList:[{productId:&quot;13&quot;,productName:&quot;daisy&quot;,salePrice:18,productNum:3,productImage:&quot;image/daisy&quot;,checked:&quot;1&quot;}]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/admin/order/sfadfsdfd" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{userName: 'gyy1234567',orderList:[{productId:&quot;13&quot;,productName:&quot;daisy&quot;,salePrice:18,productNum:3,productImage:&quot;image/daisy&quot;,checked:&quot;1&quot;}]}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1344,46 +1349,6 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.test:report">
-    <configuration name="build:release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:release" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint:fix" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="lint:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint:watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="test:report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -1394,13 +1359,71 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="User.PUT /user/change" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/functional/api/user-test.js</test-file>
+      <test-names>
+        <name value="User" />
+        <name value="PUT /user/change" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="User.PUT /user/change.when there is a jwt token.when the token is valid" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/functional/api/user-test.js</test-file>
+      <test-names>
+        <name value="User" />
+        <name value="PUT /user/change" />
+        <name value="when there is a jwt token" />
+        <name value="when the token is valid" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test\functional\api\admin-order.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/functional/api/admin-order.js</test-file>
+      <method v="2" />
+    </configuration>
+    <configuration name="test\functional\api\user-test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/functional/api/user-test.js</test-file>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.test:report" />
-        <item itemvalue="npm.lint:watch" />
-        <item itemvalue="npm.lint:fix" />
-        <item itemvalue="npm.start:watch" />
-        <item itemvalue="npm.build:release" />
+        <item itemvalue="Mocha.test\functional\api\admin-order.js" />
+        <item itemvalue="Mocha.test\functional\api\user-test.js" />
+        <item itemvalue="Mocha.User.PUT /user/change" />
+        <item itemvalue="Mocha.User.PUT /user/change.when there is a jwt token.when the token is valid" />
       </list>
     </recent_temporary>
   </component>
@@ -1425,7 +1448,7 @@
       <workItem from="1571861584988" duration="4737000" />
       <workItem from="1572826246685" duration="199000" />
       <workItem from="1572826464398" duration="40200000" />
-      <workItem from="1572152188117" duration="9170000" />
+      <workItem from="1572152188117" duration="14426000" />
     </task>
     <servers />
   </component>

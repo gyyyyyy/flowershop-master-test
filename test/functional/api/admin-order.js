@@ -166,8 +166,7 @@ describe('Order', () => {
         return request(server)
           .put(`/admin/order/${validID}`)
           .send({'userName': 'gyy1234567',
-            'orderList':
-                            [{'productId':'13','productName':'daisy','salePrice':18,'productNum':3,'productImage':'image/daisy','checked':'1'}]
+            'orderList':[{'productId':'13','productName':'daisy','salePrice':18,'productNum':3,'productImage':'image/daisy','checked':'1'}]
           })
           .expect(200)
           .then(resp => {

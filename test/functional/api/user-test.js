@@ -173,8 +173,8 @@ describe('User', () => {
     describe('when the username is not registered', () => {
       it('should return a message the username is not registered', () => {
         let user = {}
-        user.username = 'sssdf'
-        user.password = '123'
+        user.userName = 'sssdf'
+        user.userPwd = '123'
         return request(server)
           .post('/user/login')
           .send(user)
@@ -189,12 +189,48 @@ describe('User', () => {
           })
       })
     })
+    describe('when the username is empty', () => {
+      it('should return a message The username cannot be empty.', () => {
+        let user = {}
+        user.userPwd = '123'
+        return request(server)
+            .post('/user/login')
+            .send(user)
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .then((res) => {
+              expect(res.body.message).equals('The username cannot be empty.')
+            })
+            .catch((err) => {
+              //console.log(err)
+            })
+      })
+    })
+    describe('when the password is empty', () => {
+      it('should return a message The password cannot be empty', () => {
+        let user = {}
+        user.userName = 'gyy123'
+        return request(server)
+            .post('/user/login')
+            .send(user)
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .then((res) => {
+              expect(res.body.message).equals('The username cannot be empty.')
+            })
+            .catch((err) => {
+              //console.log(err)
+            })
+      })
+    })
     describe('when the username is registered', () => {
       describe('when the password is wrong', () => {
         it('should return a message the password is wrong', () => {
           let user = {}
-          user.username = 'gyy123'
-          user.password = '12345'
+          user.userName = 'gyy123'
+          user.userPwd = '12345'
           return request(server)
             .post('/user/login')
             .send(user)
@@ -212,8 +248,8 @@ describe('User', () => {
       describe('when the password is correct', () => {
         it('should return a token and a message showing successfully login', () => {
           let user = {}
-          user.username = 'gyy123'
-          user.password = sha1('123')
+          user.userName = 'gyy123'
+          user.userPwd = sha1('123')
           return request(server)
             .post('/user/login')
             .send(user)
@@ -234,8 +270,8 @@ describe('User', () => {
     describe('when the username is already in database', () => {
       it('should return a message to inform the duplication', () => {
         let user = {}
-        user.username = 'gyy123'
-        user.password = '123'
+        user.userName = 'gyy123'
+        user.userPwd = '123'
         return request(server)
           .post('/user/register')
           .set('Accept', 'application/json')
@@ -253,8 +289,8 @@ describe('User', () => {
     describe('when the username is new', () => {
       it('should return a message of successfully add user', () => {
         let user = {}
-        user.username = 'user'
-        user.password = '123'
+        user.userName = 'user'
+        user.userPwd = '123'
         return request(server)
           .post('/user/register')
           .set('Accept', 'application/json')
@@ -296,7 +332,7 @@ describe('User', () => {
       it('should require to login if it does not have a jwt token',  () => {
         let user = {}
         user.userName = 'gyy123'
-        user.userPwd = sha1('123')
+        user.userPwd = '123456'
         return request(server)
           .put('/user/change')
           .send(user)
@@ -316,8 +352,8 @@ describe('User', () => {
         it('should return an invalid error', () => {
           let user = {}
           user.token = '123'
-          user.username = 'gyy123'
-          user.password = '123'
+          user.userName = 'gyy123'
+          user.userPwd = '123456'
           return request(server)
             .put('/user/change')
             .send(user)
@@ -337,8 +373,8 @@ describe('User', () => {
           it('should return a message the username is not registered', () => {
             let user = {}
             user.token = token
-            user.username = 'shenmewanyi'
-            user.password = 'shenmewanyi'
+            user.userName = 'shenmewanyi'
+            user.userPwd = 'shenmewanyi'
 
             return request(server)
               .put('/user/change')
@@ -358,8 +394,8 @@ describe('User', () => {
           it('should return a message of successfully update user', () => {
             let user = {}
             user.token = token
-            user.username = 'gyy123'
-            user.password = '123'
+            user.userName = 'gyy123'
+            user.userPwd = '123456'
             return request(server)
               .put('/user/change')
               .send(user)
@@ -381,7 +417,7 @@ describe('User', () => {
               .expect(200)
               .then(res => {
                 expect(res.body[0]).to.have.property('userName', 'gyy123')
-                expect(res.body[0]).to.have.property('userPwd', sha1('123'))
+                expect(res.body[0]).to.have.property('userPwd', sha1('123456'))
               })
               .catch((err) => {
                 //console.log(err)
