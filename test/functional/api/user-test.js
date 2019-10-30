@@ -228,7 +228,8 @@ describe("User", () => {
                 })
             })
         })
-    })    describe('POST /user/register', () => {
+    })
+    describe('POST /user/register', () => {
         describe('when the username is already in database', () => {
             it('should return a message to inform the duplication', () => {
                 let user = {}
