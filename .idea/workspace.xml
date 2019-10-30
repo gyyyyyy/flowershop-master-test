@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="" />
+    <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/test/functional/api/user-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/user-test.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1424,7 +1426,7 @@
       <workItem from="1571861584988" duration="4737000" />
       <workItem from="1572826246685" duration="199000" />
       <workItem from="1572826464398" duration="40200000" />
-      <workItem from="1572152188117" duration="2381000" />
+      <workItem from="1572152188117" duration="2704000" />
     </task>
     <servers />
   </component>

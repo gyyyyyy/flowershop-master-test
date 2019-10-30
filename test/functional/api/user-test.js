@@ -168,6 +168,67 @@ describe("User", () => {
         });
     });  //end-DELETE
 
-    
+    describe('POST /user/login', () => {
+        describe('when the username is not registered', () => {
+            it('should return a message the username is not registered', () => {
+                let user = {}
+                user.username = 'sssdf'
+                user.password = '123'
+                return request(server)
+                    .post('/user/login')
+                    .send(user)
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .expect(200)
+                    .then((res) => {
+                        expect(res.body.message).equals('User does not exist.')
+                    })
+                    .catch((err) => {
+                        //console.log(err)
+                    })
+            })
+        })
+        describe('when the username is registered', () => {
+            describe('when the password is wrong', () => {
+                it('should return a message the password is wrong', () => {
+                    let user = {}
+                    user.username = 'gyy123'
+                    user.password = '12345'
+                    return request(server)
+                        .post('/user/login')
+                        .send(user)
+                        .set('Accept', 'application/json')
+                        .expect('Content-Type', /json/)
+                        .expect(200)
+                        .then((res) => {
+                            expect(res.body.message).equals('Password is incorrect, please enter it again')
+                        })
+                        .catch((err) => {
+                            //console.log(err)
+                        })
+                })
+            })
+            describe('when the password is correct', () => {
+                it('should return a token and a message showing successfully login', () => {
+                    let user = {}
+                    user.username = 'gyy123'
+                    user.password = sha1('123')
+                    return request(server)
+                        .post('/user/login')
+                        .send(user)
+                        .set('Accept', 'application/json')
+                        .expect('Content-Type', /json/)
+                        .expect(200)
+                        .then((res) => {
+                            expect(res.body.message).equals('Log in successfully!')
+                        })
+                        .catch((err) => {
+                            //console.log(err)
+                        })
+                })
+            })
+        })
+    })
+
 
 });
