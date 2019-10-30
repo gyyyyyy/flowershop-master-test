@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="">
+    <list default="true" id="9d6df962-c30a-4d28-82d3-52cb0097825a" name="Default Changelist" comment="Code coverage and equality improve">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/0f39bbdb-2319-4579-a468-4c49bd113317.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/0f39bbdb-2319-4579-a468-4c49bd113317.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/20b1c6ae-8c7e-44b0-934d-94e124e1f780.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/20b1c6ae-8c7e-44b0-934d-94e124e1f780.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/app.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/app.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/config.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/config.js.html" afterDir="false" />
@@ -20,9 +20,7 @@
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/user.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/flowershop-master-agile1/routes/user.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/api/admin-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/admin-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/api/user-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/api/user-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1348,7 +1346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.test:report">
+  <component name="RunManager" selected="Mocha.test\functional\api\user-test.js">
     <configuration name="test:report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -1419,9 +1417,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.test\functional\api\user-test.js" />
         <item itemvalue="npm.test:report" />
         <item itemvalue="Mocha.test\functional\api\admin-order.js" />
-        <item itemvalue="Mocha.test\functional\api\user-test.js" />
         <item itemvalue="Mocha.User.PUT /user/change" />
         <item itemvalue="Mocha.User.PUT /user/change.when there is a jwt token.when the token is valid" />
       </list>
@@ -1448,7 +1446,7 @@
       <workItem from="1571861584988" duration="4737000" />
       <workItem from="1572826246685" duration="199000" />
       <workItem from="1572826464398" duration="40200000" />
-      <workItem from="1572152188117" duration="14426000" />
+      <workItem from="1572152188117" duration="15018000" />
     </task>
     <servers />
   </component>
@@ -1467,6 +1465,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Code coverage and equality improve" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code coverage and equality improve" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
