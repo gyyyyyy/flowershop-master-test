@@ -289,5 +289,104 @@ describe("User", () => {
             })
         })
     })
-    
+    describe('PUT /user/change', () => {
+        describe('when there is no jwt token', () => {
+            it('should require to login if it does not have a jwt token',  () => {
+                let user = {}
+                user.userName = 'gyy123'
+                user.userPwd = sha1("123");
+                return request(server)
+                    .put('/user/change')
+                    .send(user)
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .expect(200)
+                    .then((res) => {
+                        expect(res.body.message).equals('Not Login Yet, Please Login')
+                    })
+                    .catch((err) => {
+                        //console.log(err)
+                    })
+            })
+        })
+        describe('when there is a jwt token', () => {
+            describe('when the token is invalid', () => {
+                it('should return an invalid error', () => {
+                    let user = {}
+                    user.token = '123'
+                    user.username = 'gyy123'
+                    user.password = '123'
+                    return request(server)
+                        .put('/user/change')
+                        .send(user)
+                        .set('Accept', 'application/json')
+                        .expect('Content-Type', /json/)
+                        .expect(200)
+                        .then((res) => {
+                            expect(res.body.errmsg.name).equals('JsonWebTokenError')
+                        })
+                        .catch((err) => {
+                            //console.log(err)
+                        })
+                })
+            })
+            describe('when the token is valid', () => {
+                describe('when the username is not registered', () => {
+                    it('should return a message the username is not registered', () => {
+                        let user = {}
+                        user.token = token
+                        user.username = 'shenmewanyi'
+                        user.password = 'shenmewanyi'
+
+                        return request(server)
+                            .put('/user/change')
+                            .send(user)
+                            .set('Accept', 'application/json')
+                            .expect('Content-Type', /json/)
+                            .expect(200)
+                            .then((res) => {
+                                expect(res.body.message).equals('The username is not registered')
+                            })
+                            .catch((err) => {
+                                //console.log(err)
+                            })
+                    })
+                })
+                describe('when the username is registered', () => {
+                    it('should return a message of successfully update user', () => {
+                        let user = {}
+                        user.token = token
+                        user.username = 'gyy123'
+                        user.password = '123'
+                        return request(server)
+                            .put('/user/change')
+                            .send(user)
+                            .set('Accept', 'application/json')
+                            .expect('Content-Type', /json/)
+                            .expect(200)
+                            .then((res) => {
+                                expect(res.body.message).equals('Successfully change password')
+                            })
+                            .catch((err) => {
+                                //console.log(err)
+                            })
+                    })
+                    after(() => {
+                        return request(server)
+                            .get(`/user/${validID}`)
+                            .set('Accept', 'application/json')
+                            .expect('Content-Type', /json/)
+                            .expect(200)
+                            .then(res => {
+                                expect(res.body[0]).to.have.property("userName", "gyy123");
+                                expect(res.body[0]).to.have.property("userPwd", sha1("123"));
+                            })
+                            .catch((err) => {
+                                //console.log(err)
+                            })
+                    })
+                })
+            })
+        })
+    })
 });
