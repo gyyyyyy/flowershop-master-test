@@ -126,5 +126,48 @@ describe("User", () => {
             });
         });
     });
+    describe("DELETE /user/:id", () => {
+        describe("when the id is valid", () => {
+            it("should return a message", done => {
+                request(server)
+                    .delete(`/user/${validID}`)
+                    .expect(200)
+                    .end((err,resp) => {
+                        expect(resp.body).to.include({
+                            message: 'User Deleted!'
+                        });
+                        done(err);
+                    });
+            });
+            after(() => {
+                return request(server)
+                    .get(`/user/${validID}`)
+                    .set("Accept", "application/json")
+                    .expect("Content-Type", /json/)
+                    .expect(200)
+                    .then((res) => {
+                        expect(res.body.message).equals("User NOT Found!");
+                    })
+
+            });
+        });
+        describe("when the id is invalid", () => {
+            it("should return the NOT DELETED message", done => {
+                request(server)
+                    .delete("/user/9999")
+                    .expect(200)
+                    //.set("Accept", "application/json")
+                    //.expect("Content-Type", /json/)
+                    .end((err,resp) => {
+                        expect(resp.body).to.include({
+                            message: 'User NOT found!'
+                        });
+                        done(err);
+                    });
+            });
+        });
+    });  //end-DELETE
+
     
+
 });
