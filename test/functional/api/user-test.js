@@ -228,7 +228,66 @@ describe("User", () => {
                 })
             })
         })
+    })    describe('POST /user/register', () => {
+        describe('when the username is already in database', () => {
+            it('should return a message to inform the duplication', () => {
+                let user = {}
+                user.username = 'gyy123'
+                user.password = '123'
+                return request(server)
+                    .post('/user/register')
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .send(user)
+                    .expect(200)
+                    .then((res) => {
+                        expect(res.body.message).equals('User already exists!')
+                    })
+                    .catch((err) => {
+                        //console.log(err)
+                    })
+            })
+        })
+        describe('when the username is new', () => {
+            it('should return a message of successfully add user', () => {
+                let user = {}
+                user.username = 'user'
+                user.password = '123'
+                return request(server)
+                    .post('/user/register')
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .send(user)
+                    .expect(200)
+                    .then((res) => {
+                        expect(res.body.message).equals('Registered successfully')
+                    })
+                    .catch((err) => {
+                        //console.log(err)
+                    })
+            })
+            after(() => {
+                return request(server)
+                    .get('/user')
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .expect(200)
+                    .then((res) => {
+                        expect(res.body.data.length).to.equal(3)
+                        let result = _.map(res.body.data, (user) => {
+                            return {
+                                username: user.username
+                            }
+                        })
+                        expect(result).to.deep.include({
+                            username: 'user'
+                        })
+                    })
+                    .catch((err) => {
+                        //console.log(err)
+                    })
+            })
+        })
     })
-
-
+    
 });
