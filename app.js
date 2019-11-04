@@ -19,7 +19,7 @@ app.set('view engine', 'ejs')
 app.use(logger('dev'))
 //slience
 if (process.env.NODE_ENV !== 'test') {
-  app.use(logger('dev'));
+  app.use(logger('dev'))
 }
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))

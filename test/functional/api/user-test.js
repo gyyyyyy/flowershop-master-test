@@ -194,17 +194,17 @@ describe('User', () => {
         let user = {}
         user.userPwd = '123'
         return request(server)
-            .post('/user/login')
-            .send(user)
-            .set('Accept', 'application/json')
-            .expect('Content-Type', /json/)
-            .expect(200)
-            .then((res) => {
-              expect(res.body.message).equals('The username cannot be empty.')
-            })
-            .catch((err) => {
-              //console.log(err)
-            })
+          .post('/user/login')
+          .send(user)
+          .set('Accept', 'application/json')
+          .expect('Content-Type', /json/)
+          .expect(200)
+          .then((res) => {
+            expect(res.body.message).equals('The username cannot be empty.')
+          })
+          .catch((err) => {
+            //console.log(err)
+          })
       })
     })
     describe('when the password is empty', () => {
@@ -212,17 +212,17 @@ describe('User', () => {
         let user = {}
         user.userName = 'gyy123'
         return request(server)
-            .post('/user/login')
-            .send(user)
-            .set('Accept', 'application/json')
-            .expect('Content-Type', /json/)
-            .expect(200)
-            .then((res) => {
-              expect(res.body.message).equals('The username cannot be empty.')
-            })
-            .catch((err) => {
-              //console.log(err)
-            })
+          .post('/user/login')
+          .send(user)
+          .set('Accept', 'application/json')
+          .expect('Content-Type', /json/)
+          .expect(200)
+          .then((res) => {
+            expect(res.body.message).equals('The username cannot be empty.')
+          })
+          .catch((err) => {
+            //console.log(err)
+          })
       })
     })
     describe('when the username is registered', () => {
