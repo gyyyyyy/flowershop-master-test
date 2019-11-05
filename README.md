@@ -167,3 +167,7 @@ PUT /user/change
     - Using `babel` to `compile` and support `es6 grammar`.
     - Using `cross-env` to enable `platform independence`.
     - Using `nodemon` and `eslint-watch` to `watch` the `file changes` of a project and perform `hot reboot`.
+## PS:
+~~~
+The part of the data that is inserted asynchronously before the test is sometimes error-prone and may time out or cause other problems. It takes multiple tests to pass!
+~~~
