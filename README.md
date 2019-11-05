@@ -155,11 +155,10 @@ PUT /user/change
 
 ## Extra features.
 
-- Authentication: The project uses `jsonwebtoken` as a way of authentication, each api that needs authentication should put a token in the request body to be verified.
+- Authentication: 
+    - The project uses `jsonwebtoken` as a way of authentication, each api that needs authentication should put a token in the request body to be verified.
 - Automated testing:
     - Using `mocha` and `lodash` to do automated testing.
-    - There are `108` test cases in total.
-    - Using `nock` to mock http request.
 - Code quality:
     - Using `eslint` to check and obey the `code standard`.
     - Using `nyc` to generate `code coverage report`.
