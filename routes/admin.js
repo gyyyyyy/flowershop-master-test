@@ -92,7 +92,7 @@ router.findAllOrder = function(req, res) {
     else {
 
       res.json(order)
-      console.log(res.body)
+      
     }
   })
 }
@@ -106,7 +106,7 @@ router.findOneOrder = function(req, res) {
       res.json({ message: 'Order NOT Found!', errmsg : err } )
     else
       res.json(order)
-    console.log(res.body)
+    
   })
 }
 
